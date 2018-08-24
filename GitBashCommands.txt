@@ -17,3 +17,6 @@
 
 ## To view commit history of current branch
 > git log
+
+## To view diff changes in last git commit
+> git show
