@@ -1,0 +1,16 @@
+## To initialize new .git project
+> git init $projectName
+
+## To check status of currect project
+> git status
+
+## To add individual files to Staged area
+> git add $fileName
+
+## To add all files to Staged area
+> git add .
+
+## To commit staged files on local branch
+> git commit -m "$commitMessage"
+
+-m for message
