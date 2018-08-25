@@ -62,7 +62,7 @@ Example		: git history -- README.md
 ## To rename a file
 > git mv $oldFileName $newFileName
 
-## To add only deleted files to staged area
+## To add only updated files to staged area
 > git add -u
 
 ## To add all modified files to to staged area
