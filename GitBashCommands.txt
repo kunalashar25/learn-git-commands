@@ -26,3 +26,9 @@
 
 ## To directly commit all modified files without performing staged operation
 > git commit -a
+
+## To unstage any file
+> git reset HEAD $fileName
+
+## To undo modified changes of a file
+> git checkout -- $fileName
