@@ -58,3 +58,6 @@ Example		: git config --global alias.history "log --oneline --graph --decorate -
 > git $aliasName -- $fileName
 
 Example		: git history -- README.md
+
+## To rename a file
+> git mv $oldFileName $newFileName
