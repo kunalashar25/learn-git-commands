@@ -13,10 +13,16 @@
 ## To commit staged files on local branch
 > git commit -m "$commitMessage"
 
--m for message
+-m for commit message
 
 ## To view commit history of current branch
 > git log
 
 ## To view diff changes in last git commit
 > git show
+
+## To view list of files that are tracked by git
+> git ls-files
+
+## To directly commit all modified files without performing staged operation
+> git commit -a
