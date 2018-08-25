@@ -141,3 +141,18 @@ Note		: In soft and mixed reset, we'll have files in our staged/unstaged area bu
 
 ## To view log of all actions taken in an repository
 > git reflog 
+
+## To link local repository with remote repository
+> git remote add origin $remoteURL
+
+Example		: git remote add origin https://github.com/kunalashar25/GitBashCommands.git
+
+## To push local code to remote repository
+> git push -u origin $branchName --tags
+
+-u		: it sets up branch tracking relationship between remote and local branch.
+--tags		: to push all tags.
+
+Example		: git push -u origin master --tags
+
+
