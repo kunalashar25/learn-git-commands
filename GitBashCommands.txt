@@ -84,3 +84,11 @@ Example		: git history -- README.md
 > git checkout -b $branchName
 
 -b		: to create and checkout a new branch
+
+## To switch between branch
+> git checkout $branchName
+
+## To merge branch
+> git merge $branchName
+
+Note		: to merge newBranch with master branch, you need to switch to master branch first and then hit merge command.
