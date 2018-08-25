@@ -100,3 +100,20 @@ Note		: to merge newBranch with master branch, you need to switch to master bran
 
 ## To view merging conflicts in a file
 > cat $fileName
+
+## To create new tag
+> git tag $tagName
+
+## To view all created tags
+> git tag --list
+
+## To delete a tag
+> git tag -d $tagName
+
+## To create annotated tags
+> git tag -a $tagName -m "$message"
+
+-a		: to denote annotated tags
+-m		: to add message to this tag.
+
+Example		: git tag -a v1.0 -m "Release 1.0"
