@@ -13,7 +13,7 @@
 ## To commit staged files on local branch
 > git commit -m "$commitMessage"
 
--m for commit message
+-m		:  to provide commit message
 
 ## To view commit history of current branch
 > git log
@@ -32,3 +32,29 @@
 
 ## To undo modified changes of a file
 > git checkout -- $fileName
+
+## To view decorated and single line git log
+> git log --oneline --graph --decorate --all
+
+--oneline	: to view everything on a single line.
+--graph		: to view asterisk based graph denoting our branched hierarchy.
+--decorate	: to view which commit are part of which branch.
+--all		: to view history of all the branches available in repository.
+
+## To create new alias in git
+> git config --global alias.$aliasName "$gitCommand"
+
+--global	: to configure on global level.
+
+Example		: git config --global alias.history "log --oneline --graph --decorate --all"
+
+## To call git alias
+> git $aliasName
+
+## To view list of all global parameters
+> git config --global --list
+
+## To view logs of a particular file
+> git $aliasName -- $fileName
+
+Example		: git history -- README.md
