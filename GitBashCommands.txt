@@ -97,3 +97,6 @@ Note		: to merge newBranch with master branch, you need to switch to master bran
 > git branch -d $branchName
 
 -d		: to delete a particular branch.
+
+## To view merging conflicts in a file
+> cat $fileName
