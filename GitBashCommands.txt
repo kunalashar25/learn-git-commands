@@ -120,3 +120,12 @@ Example		: git tag -a v1.0 -m "Release 1.0"
 
 ## To view information of any tag
 > git show $tagName
+
+## To stash local changes
+> git stash
+
+## To view all stashes
+> git stash list
+
+## To restore stash to branch
+> git stash pop
