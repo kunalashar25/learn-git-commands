@@ -67,3 +67,17 @@ Example		: git history -- README.md
 
 ## To add all modified files to to staged area
 > git add -A
+
+## To check difference in commit and HEAD
+> git diff $commitId HEAD
+
+## To check difference between any two commits
+> git diff $commitId1 $commitId2
+
+## To view all branches
+> git branch
+
+## To checkout a new branch
+> git checkout -b $branchName
+
+-b		: to create and checkout a new branch
