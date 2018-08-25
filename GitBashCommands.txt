@@ -117,3 +117,6 @@ Note		: to merge newBranch with master branch, you need to switch to master bran
 -m		: to add message to this tag.
 
 Example		: git tag -a v1.0 -m "Release 1.0"
+
+## To view information of any tag
+> git show $tagName
