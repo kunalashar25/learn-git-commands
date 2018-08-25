@@ -74,6 +74,9 @@ Example		: git history -- README.md
 ## To check difference between any two commits
 > git diff $commitId1 $commitId2
 
+## To check difference between any two commits
+> git diff $branchName1 $branchName2
+
 ## To view all branches
 > git branch
 
