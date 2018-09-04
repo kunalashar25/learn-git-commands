@@ -152,7 +152,22 @@ Example		: git remote add origin https://github.com/kunalashar25/GitBashCommands
 
 -u		: it sets up branch tracking relationship between remote and local branch.
 --tags		: to push all tags.
+origin		: name of remote reference.
 
-Example		: git push -u origin master --tags
+Example		: git push -u origin master --tags 
 
+## To clone repository from GitHub
+> git clone $cloneUrl
 
+Note		: it will create a folder in local system with same name as our repository name.
+
+## To clone repository from Git with custom local folder name
+> git clone $cloneUrl $folderName
+
+## To fetch all changes from GitHub
+> git fetch
+
+## To pull all changes from GitHub
+> git pull
+
+Note		: internally pull command is combination of fetch and mege command.
