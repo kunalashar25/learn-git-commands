@@ -192,3 +192,9 @@ Note		: internally pull command is combination of fetch and mege command.
 > git push origin :$branchName
 
 :$branchName		: It ':' tells git to delete remote branch with specified $branchName
+
+## To keep your local branch ahead of origin/master
+> git pull --rebase
+
+--rebase		: Rebase first rewinds your local branch i.e. it undo's all your local changes, 
+			  then it brings all changes from Github and then it applies all local changes back to that branch to stay ahead of master.
