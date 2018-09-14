@@ -171,3 +171,6 @@ Note		: it will create a folder in local system with same name as our repository
 > git pull
 
 Note		: internally pull command is combination of fetch and mege command.
+
+## To remove any file
+> git rm $fileName
