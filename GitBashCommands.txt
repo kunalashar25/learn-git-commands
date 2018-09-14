@@ -54,6 +54,9 @@ Example		: git config --global alias.history "log --oneline --graph --decorate -
 ## To view list of all global parameters
 > git config --global --list
 
+## To edit global parameters
+> git config --global -e
+
 ## To view logs of a particular file
 > git $aliasName -- $fileName
 
@@ -181,3 +184,11 @@ Note		: internally pull command is combination of fetch and mege command.
 > git fetch -p
 
 -p		: It looks for any dead branches on git and remove those brances reference from local repository.
+
+## To update/pull all local branches in a single command
+> git pull --all
+
+## To delete a remote branch from local system
+> git push origin :$branchName
+
+:$branchName		: It ':' tells git to delete remote branch with specified $branchName
