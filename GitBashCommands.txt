@@ -78,7 +78,9 @@ Example		: git history -- README.md
 > git diff $branchName1 $branchName2
 
 ## To view all branches
-> git branch
+> git branch -a
+
+-a		:  list both remote-tracking and local branches
 
 ## To checkout a new branch
 > git checkout -b $branchName
@@ -174,3 +176,8 @@ Note		: internally pull command is combination of fetch and mege command.
 
 ## To remove any file
 > git rm $fileName
+
+## To remove delete branches stale reference from branchesq list
+> git fetch -p
+
+-p		: It looks for any dead branches on git and remove those brances reference from local repository.
