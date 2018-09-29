@@ -126,6 +126,17 @@ Example		: git tag -a v1.0 -m "Release 1.0"
 ## To view information of any tag
 > git show $tagName
 
+## To create a tag for a branch
+> git tag $tagName $branchName
+
+Note		: this tag will be linked with the current HEAD of $branchName
+
+## To create a tag for a commit
+> git tag -a $tagName -m "$tagMeaasge" $commitId
+
+## To push single tag to remote repository
+> git push origin $tagName
+
 ## To stash local changes
 > git stash
 
