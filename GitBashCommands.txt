@@ -140,6 +140,15 @@ Note		: this tag will be linked with the current HEAD of $branchName
 
 :$tagName	: ':' denotes to delete from remote repo.
 
+## To update tag reference to new commit
+> git tag -f $tagName $commitId
+
+-f		: to force update current reference of tag to new commit id
+Example		: git tag -f stable 9ed6d70
+
+## To push updated tag reference to new commit
+> git push --force --tags
+
 ## To push single tag to remote repository
 > git push origin $tagName
 
