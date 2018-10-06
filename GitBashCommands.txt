@@ -134,6 +134,12 @@ Note		: this tag will be linked with the current HEAD of $branchName
 ## To create a tag for a commit
 > git tag -a $tagName -m "$tagMeaasge" $commitId
 
+## To delete a tag remotely
+> git tag -d $tagName
+> git push origin :$tagName
+
+:$tagName	: ':' denotes to delete from remote repo.
+
 ## To push single tag to remote repository
 > git push origin $tagName
 
