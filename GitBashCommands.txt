@@ -126,6 +126,32 @@ Example		: git tag -a v1.0 -m "Release 1.0"
 ## To view information of any tag
 > git show $tagName
 
+## To create a tag for a branch
+> git tag $tagName $branchName
+
+Note		: this tag will be linked with the current HEAD of $branchName
+
+## To create a tag for a commit
+> git tag -a $tagName -m "$tagMeaasge" $commitId
+
+## To delete a tag remotely
+> git tag -d $tagName
+> git push origin :$tagName
+
+:$tagName	: ':' denotes to delete from remote repo.
+
+## To update tag reference to new commit
+> git tag -f $tagName $commitId
+
+-f		: to force update current reference of tag to new commit id
+Example		: git tag -f stable 9ed6d70
+
+## To push updated tag reference to new commit
+> git push --force --tags
+
+## To push single tag to remote repository
+> git push origin $tagName
+
 ## To stash local changes
 > git stash
 
